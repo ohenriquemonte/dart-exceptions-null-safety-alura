@@ -22,13 +22,27 @@
 // }
 
 void main() {
-//   double amount = double.parse('25,33');
+  print('Started main');
 
-  recursiveFunc(0);
+  functionOne();
+
+  print('Finished main');
 }
 
-recursiveFunc(int count) {
-  print(count);
+void functionOne() {
+  print('Started functionOne');
 
-  recursiveFunc(count + 1);
+  funtcionTwo();
+
+  print('Finished functionOne');
+}
+
+void funtcionTwo() {
+  print('Started funtcionTwo');
+
+  for (var i = 0; i <= 5; i++) {
+    print(i);
+  }
+
+  print('Finished funtcionTwo');
 }
