@@ -32,17 +32,23 @@ void main() {
 void functionOne() {
   print('Started functionOne');
 
-  funtcionTwo();
+  try {
+    functionTwo();
+  } on FormatException {
+    print('A conversão não pôde ser feita.');
+  }
 
   print('Finished functionOne');
 }
 
-void funtcionTwo() {
-  print('Started funtcionTwo');
+void functionTwo() {
+  print('Started functionTwo');
 
   for (var i = 0; i <= 5; i++) {
     print(i);
+
+    double amount = double.parse('Not a number');
   }
 
-  print('Finished funtcionTwo');
+  print('Finished functionTwo');
 }
