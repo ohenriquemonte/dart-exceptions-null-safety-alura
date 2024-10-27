@@ -8,3 +8,8 @@ git push -u origin main
 --
 
 dart run
+
+-- 
+
+Link curso: https://cursos.alura.com.br/course/dart-lidando-exceptions-null-safety
+
