@@ -21,6 +21,7 @@
 //   print(result);
 // }
 
+
 void main() {
   print('Started main');
 
@@ -34,8 +35,16 @@ void functionOne() {
 
   try {
     functionTwo();
-  } on FormatException {
-    print('A conversão não pôde ser feita.');
+  } catch (exception, stackTrace) {
+    print('\nException:');
+    print(exception);
+
+    print('\nStackTrace:');
+    print(stackTrace);
+
+    rethrow;
+  } finally {
+    print('\nFinally functionOne\n');
   }
 
   print('Finished functionOne');
