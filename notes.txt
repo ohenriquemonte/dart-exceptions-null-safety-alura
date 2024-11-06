@@ -9,6 +9,8 @@ git push -u origin main
 
 dart run
 
+dart run --enable-asserts
+
 -- 
 
 Link curso: https://cursos.alura.com.br/course/dart-lidando-exceptions-null-safety

@@ -8,7 +8,8 @@
             "name": "dart_exceptions_null_safety_alura",
             "program": "bin/dart_exceptions.dart",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "enableAsserts": false
         }
     ]
 }
