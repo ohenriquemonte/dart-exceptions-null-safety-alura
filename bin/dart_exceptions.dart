@@ -1,11 +1,23 @@
+import 'dart:math';
+
 import 'controllers/bank_controller.dart';
 import 'exceptions/bank_controller_exception.dart';
 import 'models/account.dart';
 
-void main() {
-  print('MyString'.runtimeType);
-  print(null.runtimeType);
+void testingNullSafety() {
+  Account? myAccount;
 
+  // Simulando uma comunicação externa
+  Random rng = Random();
+  int randomNumber = rng.nextInt(10);
+
+  if (randomNumber <= 5) {
+    myAccount = Account(name: "Ricarth Lima", balance: 200, isAuthenticated: true);
+  }
+}
+
+void main() {
+  testingNullSafety();
   // Criando o banco
   BankController bankController = BankController();
 
