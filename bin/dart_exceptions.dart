@@ -3,6 +3,9 @@ import 'exceptions/bank_controller_exception.dart';
 import 'models/account.dart';
 
 void main() {
+  print('MyString'.runtimeType);
+  print(null.runtimeType);
+
   // Criando o banco
   BankController bankController = BankController();
 
