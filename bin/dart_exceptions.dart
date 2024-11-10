@@ -14,6 +14,23 @@ void testingNullSafety() {
   if (randomNumber <= 5) {
     myAccount = Account(name: "Ricarth Lima", balance: 200, isAuthenticated: true);
   }
+
+  print(myAccount.runtimeType);
+  // print(myAccount.balance);
+  // print(myAccount!.balance);
+
+  if (myAccount != null) {
+    print(myAccount.balance);
+  } else {
+    print("myAccount is null");
+  }
+
+  print(myAccount != null ? myAccount.balance : "myAccount is null");
+
+  // conversão direta: má prática
+  print(myAccount?.balance);
+
+  print('\n');
 }
 
 void main() {
